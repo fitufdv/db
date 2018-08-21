@@ -22,9 +22,16 @@ android {
 }
 
 dependencies {
+    api 'com.github.fitufdv:model:v0.1'
+
     // region Kotlin
     api deps.kotlin.stdlib
     api deps.kotlin.anko
+    // endregion
+
+    // region Dagger2
+    api deps.dagger.androidSupport
+    kapt deps.dagger.compiler
     // endregion
 
     // region Room
